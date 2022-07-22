@@ -48,7 +48,7 @@ const CreatePost = (props) => {
         <button
           type='submit'
           className='btn btn-primary'
-          style={{ 'marginTop': '.25 em' }}>
+          style={{ 'marginTop': '1.5 em' }}>
           Submit
         </button>
         <hr />
