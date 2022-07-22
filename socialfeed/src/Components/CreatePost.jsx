@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 const CreatePost = (props) => {
     const [message, setMessage] = useState('');
     const [name, setName] = useState('');
+    
   
     function handleSubmit(event) {
       event.preventDefault();

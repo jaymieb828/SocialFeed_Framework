@@ -1,21 +1,30 @@
 import React, { useState } from 'react';
 import DisplayPosts from './Components/DisplayPost';
 import CreatePost from './Components/CreatePost';
+import NavBar from './Components/NavBar';
+import "./Components/DisplayPost";
+import "./Components/CreatePost";
 
 
 function App() {
   const [posts, setPosts] = useState([
     { name: 'Jaymie', message: "Welcome to my social feed!" },
   ]);
-  return(
-    <div>
-      <CreatePost createPost={posts}/>
-      <DisplayPosts displayPosts={posts}/>
-      
+  function addNewPost(post) {
+    let tempPost = [...posts, post];
+    setPosts(tempPost);
+  }
+
+
+return (
+  <div className='container-fluid'> 
+  <NavBar className='navbar'/>
+  <div className='borders'>
+    <CreatePost addNewPost={addNewPost}/>
+    <DisplayPosts displayPosts={posts}/>
     </div>
+  </div>
   );
- 
 }
-console.log(App) 
 
 export default App;
