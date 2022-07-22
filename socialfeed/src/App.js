@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
-import DisplayEntries from './Components/DisplayEntries/DisplayEntries';
-import AddEntryForm from './Components/AddEntry/AddEntryForm';
+
+import CreatePost from './Components/CreatePost';
+
 
 function App() {
-
-  const [entries, setEntries] = useState([{weight: 175, date: '11-23-2021'}, {weight: 175, date: '11-23-2021'}])
-  return (
+  const [posts, setPosts] = useState([
+    { message: "Type your message here" },
+  ]);
+  return(
     <div>
-      <DisplayEntries parentEntries={entries}/>
-      <AddEntryForm setEntries={setEntries} entries={entries}/>
+      <CreatePost createPost={posts}/>
+      
     </div>
   );
+ 
 }
+console.log(App) 
 
 export default App;
