@@ -9,7 +9,7 @@ import './Index.css';
 
 function App() {
   const [posts, setPosts] = useState([
-    { name: 'Jaymie', message: "Welcome to my social feed!" },
+    { name: 'Jaymie', message: 'Welcome to my social feed!' },
   ]);
   function addNewPost(post) {
     let tempPost = [...posts, post];
