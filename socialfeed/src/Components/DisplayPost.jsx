@@ -1,4 +1,6 @@
 import Post from "./Post";
+import './DisplayPost.css';
+
 const DisplayPosts = (props) => {
   return (
     <div>
