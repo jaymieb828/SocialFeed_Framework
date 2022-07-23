@@ -4,7 +4,7 @@ import CreatePost from './Components/CreatePost';
 import NavBar from './Components/NavBar';
 import "./Components/DisplayPost";
 import "./Components/CreatePost";
-import './App.css';
+import './Index.css';
 
 
 function App() {
@@ -23,6 +23,7 @@ return (
   <div className='borders'>
     <CreatePost addNewPost={addNewPost}/>
     <DisplayPosts displayPosts={posts}/>
+  
     </div>
   </div>
   );
